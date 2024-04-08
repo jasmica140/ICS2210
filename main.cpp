@@ -1,6 +1,5 @@
 #include <vector>
 #include <ctime>
-#include <iostream>
 
 #include "knuthShuffe.h"
 #include "AVLTree.h"
@@ -28,18 +27,19 @@ int main() {
     // Print the AVL tree in order
     avlTree.printInOrder();
 
-    // Create a skip list object
+    // Create a Skip List object
     SkipList<int> skipList;
 
-    // Insert all the integers from the array into the skip list
-    for (int integer : integers) {
+    // Insert all the integers from the array into the Skip List
+    for (int & integer : integers) {
         skipList.insert(integer);
     }
 
-    // Print the skip list
-    //skipList.print();
+    // Print the contents of the Skip List
+    skipList.print();
 
     return 0;
 }
+
 
 

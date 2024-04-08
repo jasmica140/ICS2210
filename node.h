@@ -12,7 +12,7 @@ template <typename T>
 class Node {
 public:
     T value;
-    int height{};
+    int height;
     Node* left;
     Node* right;
     vector<Node*> next;
